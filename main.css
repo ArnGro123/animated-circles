@@ -1,0 +1,142 @@
+body {
+    background: #1b1b1b;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes line-connection-animation {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 115px;
+    }
+}
+
+.animated-circles {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    width: 50%;
+    height: 600px;
+}
+
+.red-circle {
+    grid-column: 5/6;
+    grid-row: 1/2;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: red;
+    box-shadow:
+        0 0 7px red,
+        0 0 14px red;
+}
+
+.red-to-green-line {
+    grid-column: 7/8;
+    grid-row: 2/3;
+    animation: line-connection-animation infinite 2s ease-in-out 3s;
+    margin-left: 350px;
+    margin-top: 85px;
+    width: 110px;
+    height: 3px;
+    background: white;
+    box-shadow: 
+        0 0 3px yellow,
+        0 0 10px #F9F871;
+    position: absolute;
+    transform: rotate(47deg);
+    transform-origin: 0%;
+}
+
+.green-circle {
+    grid-column: 7/8;
+    grid-row: 4/5;
+    margin-right: 15px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: green;
+    box-shadow: 
+        0 0 7px green,
+        0 0 14px green;
+}
+
+.green-to-blue-line {
+    grid-column: 7/8;
+    grid-row: 6/7;
+    animation: line-connection-animation infinite 2s ease-in-out 3s;
+    margin-left: 430px;
+    margin-top: 250px;
+    width: 110px;
+    height: 3px;
+    background: white;
+    box-shadow: 
+        0 0 3px yellow,
+        0 0 10px #F9F871;
+    position: absolute;
+    transform: rotate(137deg);
+    transform-origin: 0%;
+}
+
+.blue-circle {
+    grid-column: 5/6;
+    grid-row: 7/8;
+    margin-bottom: 45px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: cyan;
+    box-shadow: 
+        0 0 7px cyan,
+        0 0 14px cyan;
+}
+
+.blue-to-yellow-line {
+    grid-column: 7/8;
+    grid-row: 6/7;
+    animation: line-connection-animation infinite 2s ease-in-out 3s;
+    margin-left: 275px;
+    margin-top: 325px;
+    width: 120px;
+    height: 3px;
+    background: white;
+    box-shadow: 
+        0 0 3px yellow,
+        0 0 10px #F9F871;
+    position: absolute;
+    transform: rotate(227deg);
+    transform-origin: 0%;
+}
+
+.yellow-circle {
+    grid-column: 3/4;
+    grid-row: 4/5;
+    margin-left: 10px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: yellow;
+    box-shadow: 
+        0 0 7px yellow,
+        0 0 14px yellow;
+}
+
+.yellow-to-red-line {
+    grid-column: 3/4;
+    grid-row: 4/5;
+    animation: line-connection-animation infinite 2s ease-in-out 3s;
+    margin-left: 190px;
+    margin-top: 160px;
+    width: 120px;
+    height: 3px;
+    background: white;
+    box-shadow: 
+        0 0 3px yellow,
+        0 0 10px #F9F871;
+    position: absolute;
+    transform: rotate(318deg);
+    transform-origin: 0%;
+}
